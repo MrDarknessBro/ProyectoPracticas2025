@@ -1,1 +1,54 @@
-Informe Semana 9
+Semana 9 – Diseño del sistema y manejo de archivos en Java
+
+1. Diagrama de Clases del Sistema (resumen textual):
+
+Clases principales:
+- Estudiante:
+    - Atributos: dni, nombre
+    - Métodos: getDni(), getNombre(), setNombre()
+- Asistencia:
+    - Atributos: dniEstudiante, fecha, estado (Presente/Ausente/Tardanza)
+    - Métodos: registrarAsistencia(), modificarAsistencia(), obtenerHistorial()
+- ControlAsistencias:
+    - Atributos: listaEstudiantes, listaAsistencias
+    - Métodos: registrarEstudiante(), eliminarEstudiante(), actualizarEstudiante(), registrarAsistencia(), generarReporte()
+
+Relaciones:
+- ControlAsistencias utiliza Estudiante y Asistencia para administrar los registros.
+- Estudiante y Asistencia mantienen integridad de datos mediante validaciones.
+
+2. Práctica de manejo de archivos en Java:
+
+Guardar Estudiantes en Archivo:
+
+import java.io.*;
+import java.util.ArrayList;
+
+public class ArchivoEstudiantes {
+
+    private static final String RUTA = "estudiantes.txt";
+
+    public static void guardar(ArrayList<Estudiante> lista) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter(RUTA))) {
+            for (Estudiante e : lista) {
+                writer.println(e.getDni() + ";" + e.getNombre());
+            }
+        } catch (IOException ex) {
+            System.out.println("Error al guardar archivo");
+        }
+    }
+
+    public static ArrayList<Estudiante> cargar() {
+        ArrayList<Estudiante> lista = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(RUTA))) {
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                String[] datos = linea.split(";");
+                lista.add(new Estudiante(datos[0], datos[1]));
+            }
+        } catch (IOException e) {
+            System.out.println("Archivo no encontrado");
+        }
+        return lista;
+    }
+}
