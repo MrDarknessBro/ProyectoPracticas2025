@@ -1,1 +1,70 @@
-Aquí va el contenido del informe de la Semana 8
+Semana 8 — Requerimientos funcionales y Historias de Usuario
+
+Requerimientos funcionales (RF):
+
+RF01: El sistema debe permitir registrar un estudiante con DNI único.
+RF02: El sistema debe validar que el DNI ingresado no esté repetido.
+RF03: El sistema debe permitir consultar los datos de un estudiante.
+RF04: El sistema debe permitir actualizar los datos de un estudiante.
+RF05: El sistema debe permitir eliminar el registro de un estudiante.
+RF06: El sistema debe registrar la asistencia de un estudiante usando su DNI.
+RF07: El sistema debe permitir registrar si un estudiante está presente, ausente o tardanza.
+RF08: El sistema debe validar que el estudiante exista antes de registrar asistencia.
+RF09: El sistema debe almacenar el historial de asistencias por fechas.
+RF10: El sistema debe permitir consultar asistencia por estudiante.
+RF11: El sistema debe permitir consultar asistencia por fecha específica.
+RF12: El sistema debe mostrar el total de asistencias del estudiante.
+RF13: El sistema debe generar reportes simples en consola.
+RF14: El sistema debe permitir justificar inasistencias.
+RF15: El sistema debe mostrar advertencias de datos incompletos.
+RF16: El sistema debe permitir listar todos los estudiantes registrados.
+RF17: El sistema debe permitir listar las asistencias de un día.
+RF18: El sistema debe permitir marcar múltiples asistencias en una sesión.
+RF19: El sistema debe solicitar confirmación al eliminar datos.
+RF20: El sistema debe guardar los datos automáticamente al cerrar el sistema.
+RF21: El sistema debe permitir iniciar sesión diferenciando roles (Administrador / Docente).
+RF22: El sistema debe restringir funcionalidades según el rol del usuario.
+RF23: El administrador debe poder registrar nuevos docentes en el sistema.
+RF24: El administrador debe poder eliminar docentes del sistema.
+RF25: El sistema debe permitir registrar cursos o secciones.
+RF26: El administrador debe asignar estudiantes a cursos.
+RF27: El docente debe poder ver solo los cursos asignados.
+RF28: El sistema debe generar un reporte de asistencia por curso.
+RF29: El sistema debe generar un reporte de asistencia mensual por estudiante.
+RF30: El sistema debe alertar sobre estudiantes con asistencia crítica (más del 25% faltas).
+RF31: El sistema debe mostrar estadísticas generales de asistencia.
+RF32: El sistema debe permitir filtrar estudiantes por estado de asistencia (ausentes/tardanzas).
+RF33: El sistema debe permitir registrar la fecha y hora automáticamente.
+RF34: El sistema debe mantener integridad de datos al modificar asistencias previas.
+RF35: El sistema debe bloquear la asistencia de estudiantes eliminados.
+RF36: El sistema debe permitir justificación de tardanza como comentario.
+RF37: El sistema debe manejar múltiples registros de asistencia por día si se requiere.
+RF38: El sistema debe garantizar que los archivos se creen automáticamente si no existen.
+RF39: El sistema debe permitir respaldar los archivos del sistema manualmente.
+RF40: El sistema debe permitir restaurar datos desde un archivo de respaldo.
+
+Historias de Usuario (HU):
+
+HU01: Como docente, quiero registrar un estudiante ingresando su DNI para tener control organizado de los alumnos. (RF01)
+HU02: Como docente, quiero que el sistema me avise si un DNI ya fue registrado para evitar duplicidad. (RF02)
+HU03: Como docente, quiero consultar la información de un estudiante para verificar sus datos rápidamente. (RF03)
+HU04: Como docente, quiero actualizar los datos de un estudiante para mantener la información al día. (RF04)
+HU05: Como docente, quiero eliminar estudiantes dados de baja para limpiar el sistema de registros innecesarios. (RF05)
+HU06: Como docente, quiero registrar la asistencia mediante DNI para agilizar el proceso. (RF06)
+HU07: Como docente, quiero registrar si el estudiante está presente, ausente o tardanza para un mejor control académico. (RF07)
+HU08: Como docente, quiero que el sistema verifique que el DNI exista antes de marcar asistencia para evitar errores. (RF08)
+HU09: Como docente, quiero ver el historial completo de asistencias por estudiante para seguimiento académico. (RF09)
+HU10: Como docente, quiero consultar asistencia por fecha para analizar la asistencia diaria. (RF11)
+
+Criterios de Aceptación (Resumen):
+
+HU01: Dado que el docente está en el formulario de registro, cuando ingresa un DNI válido y datos completos, entonces el sistema debe guardar el estudiante y mostrar un mensaje de éxito.
+HU02: Dado que el docente intenta registrar un nuevo estudiante, cuando el DNI ingresado ya existe en la base de datos, entonces el sistema debe bloquear el registro y mostrar una alerta de duplicidad.
+HU03: Dado que el docente necesita verificar los datos de un estudiante, cuando busca por DNI o nombre, entonces el sistema debe mostrar la información completa del estudiante.
+HU04: Dado que existe un estudiante registrado, cuando el docente edita sus datos y guarda cambios, entonces el sistema debe actualizar la información correctamente.
+HU05: Dado que el docente desea dar de baja un estudiante, cuando selecciona un registro y confirma la acción, entonces el sistema debe eliminarlo y mostrar un mensaje de confirmación.
+HU06: Dado el inicio de la clase, cuando el estudiante presenta su DNI para marcar asistencia, entonces el sistema debe registrar la asistencia de manera automática.
+HU07: Dado que un estudiante está identificado en el sistema, cuando el docente elige Presente / Ausente / Tardanza, entonces el sistema debe guardar ese estado en la fecha actual.
+HU08: Dado que el docente intenta registrar asistencia, cuando el DNI no está registrado en el sistema, entonces debe mostrar mensaje de error y evitar el registro.
+HU09: Dado que el docente quiere revisar el rendimiento del alumno, cuando selecciona un estudiante, entonces el sistema debe mostrar la lista completa de sus asistencias.
+HU10: Dado una fecha de clase específica, cuando el docente pide ver la asistencia registrada ese día, entonces el sistema debe listar todos los estudiantes con su estado de asistencia.
