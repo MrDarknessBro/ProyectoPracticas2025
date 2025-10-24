@@ -1,1 +1,29 @@
-Informe Semana 10
+Semana 10 – Criterios de aceptación, implementación en Java y tablas de control
+
+1. Tabla de Control de Requerimientos y Criterios de Aceptación
+
+Requerimiento | Historia de Usuario | Criterio de Aceptación (Resumen) | Estado Actual
+RF01 | HU01 | Registro correcto de estudiante ingresando DNI válido | Pendiente
+RF02 | HU02 | Mostrar alerta si DNI ya está registrado | Pendiente
+RF03 | HU03 | Mostrar datos completos del estudiante buscado | Pendiente
+RF04 | HU04 | Actualizar datos guardando cambios correctamente | Pendiente
+RF05 | HU05 | Eliminar estudiante y notificar acción | Pendiente
+RF06 | HU06 | Registrar asistencia por DNI | Pendiente
+RF07 | HU07 | Guardar estado de asistencia (Presente/Ausente/Tardanza) | Pendiente
+RF08 | HU08 | Validar existencia de DNI antes de registrar asistencia | Pendiente
+RF09 | HU09 | Mostrar historial de asistencia por estudiante | Pendiente
+RF11 | HU10 | Consultar asistencia por fecha | Pendiente
+
+2. Relación Implementación – Requerimientos
+
+Requerimiento | Historia de Usuario | Archivo Java | Estado Actual
+RF01 | HU01 | Estudiante.java – ControlAsistencias.java | Pendiente
+RF02 | HU02 | ControlAsistencias.java | Pendiente
+RF03 | HU03 | ControlAsistencias.java | Pendiente
+RF04 | HU04 | ControlAsistencias.java | Pendiente
+RF05 | HU05 | ControlAsistencias.java | Pendiente
+RF06 | HU06 | Asistencia.java – ControlAsistencias.java | Pendiente
+RF07 | HU07 | Asistencia.java | Pendiente
+RF08 | HU08 | Asistencia.java – ControlAsistencias.java | Pendiente
+RF09 | HU09 | Asistencia.java – ControlAsistencias.java | Pendiente
+RF11 | HU10 | Asistencia.java – ControlAsistencias.java | Pendiente
