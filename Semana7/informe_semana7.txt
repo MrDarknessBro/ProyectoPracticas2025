@@ -1,0 +1,34 @@
+Semana 7 – Restricciones, Alcance del Sistema y Alternativas de Solución
+
+Restricciones Realistas del Proyecto:
+- El sistema estará desarrollado únicamente en Java.
+- La gestión de la información se realizará mediante archivos locales (no se usará base de datos).
+- Solo se admite la identificación del estudiante por DNI.
+- La conexión en red no será obligatoria.
+- El acceso al sistema será desde una sola máquina por el momento.
+- Los reportes se generarán únicamente en formato visual por consola o archivos simples.
+
+Alcance del Sistema:
+- Registrar estudiantes mediante DNI y datos personales básicos.
+- Registrar la asistencia diaria.
+- Consultar asistencias por fecha y por estudiante.
+- Modificar datos de estudiantes.
+- Generar reportes simples.
+- Mantener el almacenamiento seguro en archivos.
+
+Alternativas de Solución Evaluadas:
+
+Alternativa: Control manual en cuadernos
+- Ventajas: Bajo costo
+- Desventajas: Errores, pérdida de datos, lentitud
+- Decisión: Descartado
+
+Alternativa: Uso de base de datos
+- Ventajas: Mayor escalabilidad
+- Desventajas: Requiere infraestructura y más tiempo de desarrollo
+- Decisión: No viable por ahora
+
+Alternativa: Software en Java con almacenamiento en archivos
+- Ventajas: Automatización, bajo recurso, prácticas enfocadas al curso
+- Desventajas: Limitado para grandes escuelas
+- Decisión: Seleccionado
