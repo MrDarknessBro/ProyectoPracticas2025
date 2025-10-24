@@ -1,0 +1,30 @@
+Requerimientos de Hardware y Software para el Sistema de Control de Asistencia
+
+1. Hardware Mínimo:
+- Procesador: Intel Core i3 o equivalente
+- Memoria RAM: 4 GB
+- Almacenamiento: 100 MB libres
+- Monitor con resolución mínima 1024x768
+- Teclado y mouse
+- Puerto USB para lectura de DNI electrónico (si aplica)
+
+2. Hardware Recomendado:
+- Procesador: Intel Core i5 o equivalente
+- Memoria RAM: 8 GB
+- Almacenamiento: 500 MB libres
+- Monitor con resolución 1366x768 o superior
+- Conexión a red local (opcional)
+
+3. Software:
+- Sistema Operativo: Windows 10/11, Linux o macOS
+- Java JDK 17 o superior
+- Editor de código o IDE (Eclipse, IntelliJ IDEA, NetBeans)
+- Navegador web actualizado (para documentación y consulta)
+- Antivirus actualizado
+- Git para control de versiones
+
+4. Archivos y formatos de datos:
+- Estudiantes.txt: almacena DNI y nombre de los estudiantes
+- Asistencias.txt: registra estado de asistencia, fecha y hora
+- Respaldo de archivos: copia manual de seguridad de los archivos .txt
+
